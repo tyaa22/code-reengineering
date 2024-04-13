@@ -4,10 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/CodeSmellCard.css";
 
-const CodeSmellCard = ({data, route}) => {
+const CodeSmellCard = ({data}) => {
     const navigate = useNavigate();
+
     const handleNavigate = () => {
-        navigate({route});
+        navigate(data.route);
     }
 
     return (

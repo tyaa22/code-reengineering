@@ -30,8 +30,12 @@
     width: 60vw;
     list-style-type: none;
     height: auto;
-    background-color: white;
     position: relative;
     text-align: left;
-    padding: 30px 35px;
+    padding: 30px 12px;
+    border-top: 2px dashed #637074;
+}
+
+.smell-type-list:first-child {
+    border-top: none;
 }

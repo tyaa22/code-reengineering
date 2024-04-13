@@ -1,21 +1,25 @@
 .nav-bar {
-    padding: 0 32px;
+    width: auto;
+    height: 5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color: #E6EFEA;
 }
 
 .nav-bar-title {
     font-family: "Silkscreen", sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
+    margin: 0 24px;
 }
 
 .nav-bar-items {
     display: flex; 
     flex-direction: row;
+    align-items: center;
     gap: 32px;
+    margin: 0 24px;
 }
 
 .nav-button {
@@ -25,6 +29,56 @@
 .nav-link {
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 1.2rem;
     letter-spacing: .8px;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+}
+
+.mobile-nav {
+    display: none;
+    z-index: 20;
+}
+
+.close-nav {
+    display: none;
+}
+
+.mobile-nav-icon {
+    margin: 1rem;
+    font-size: x-large;
+}
+
+@media screen and (max-width: 900px) {
+    .mobile-nav {
+        display: inline;
+    }
+
+    .mobile-items {
+        display: flex;
+        margin: 0;
+        padding: 2rem;
+        flex-direction: column;
+        gap: 1rem;
+        width: 35%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 60%;
+        background-color: white;
+        z-index: 20;
+        justify-content: baseline;
+        align-items: center;
+        transition: left .5s ease-in-out;
+    }
+
+    .nav-bar {
+        padding: 0;
+    }
+
+    .nav-bar-items {
+        display: none;
+    }
 }

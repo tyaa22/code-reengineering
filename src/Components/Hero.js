@@ -2,7 +2,7 @@ import React from "react";
 import "../Styles/Introduction.css";
 import Programming from "../Assets/programming.svg";
 
-const Introduction = () => {
+const Hero = () => {
     return (
         <div className="intro-section">
             <div className="text-section">
@@ -21,4 +21,4 @@ const Introduction = () => {
     );
 }
 
-export default Introduction;
+export default Hero;

@@ -1,6 +1,7 @@
 const cp = {
     title: "Change Preventers",
-    txt: "Perubahan yang terjadi di satu tempat menimbulkan perubahan yang di banyak tempat. Smell ini menimbulkan kesulitan dalam menambahkan fitur baru sehingga perlu dilakukan refactoring.",
+    txt: "Perubahan yang terjadi di satu tempat menimbulkan perubahan - perubahan lain di banyak tempat. Smell ini menimbulkan kesulitan dalam menambahkan fitur baru sehingga perlu dilakukan refactoring.",
+    route: "/change-preventers",
     types : [
         {
             id: 0,
