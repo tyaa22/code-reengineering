@@ -1,0 +1,28 @@
+.footer-section {
+    padding: 0 25px;
+    background-color: #1b2433;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-section > p {
+    font-size: small;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-icons > li {
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.footer-fa-icon {
+    font-size: medium;   
+}

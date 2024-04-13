@@ -1,0 +1,30 @@
+.nav-bar {
+    padding: 0 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+
+.nav-bar-title {
+    font-family: "Silkscreen", sans-serif;
+    font-size: 30px;
+}
+
+.nav-bar-items {
+    display: flex; 
+    flex-direction: row;
+    gap: 32px;
+}
+
+.nav-button {
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    letter-spacing: .8px;
+}

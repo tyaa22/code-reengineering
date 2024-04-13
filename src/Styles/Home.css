@@ -1,0 +1,7 @@
+.code-smell-cards {
+    margin: 64px 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
