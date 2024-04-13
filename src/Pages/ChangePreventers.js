@@ -7,8 +7,7 @@ const ChangePreventers = () => {
     return (
         <>
             <SmellDescCard  smell={cp}/>
-            <Footer />
-            
+            <Footer />    
         </>
     )
 }

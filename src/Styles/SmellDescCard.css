@@ -2,8 +2,10 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    text-align: left;
+    text-align: justify;
     padding: 40px 60px;
+    line-height: 1.5rem;
+    letter-spacing: .8px;
 }
 
 .smell-explanation {

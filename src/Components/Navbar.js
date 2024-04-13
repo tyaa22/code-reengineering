@@ -19,7 +19,7 @@ const Navbar = () => {
                     <Link className="nav-link" to="/change-preventers">Change Preventers</Link>
                 </li>
                 <li className="nav-button">
-                    <Link className="nav-link" to="/github">Github Page</Link>
+                    <a href="https://github.com/tyaa22/code-reengineering" target="_blank" rel="noopener noreferrer" className="nav-link">Github Page</a>
                 </li>
             </ul>
             

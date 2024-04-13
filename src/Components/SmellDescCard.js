@@ -4,11 +4,6 @@ import {useNavigate} from "react-router-dom";
 import CodeCard from "./CodeCard";
 
 const SmellDescCard = ({smell}) => {
-    const navigate = useNavigate();
-
-    const onClickRoute = (id) => {
-        navigate(`./detail/${id}`);
-    }
 
     const createList = (types) => {
         return types.map((type) => (

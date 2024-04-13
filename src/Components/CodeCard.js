@@ -1,12 +1,11 @@
 import React from "react";
 import {CodeBlock, dracula} from "react-code-blocks";
-import "../Styles/CodeCard.css";
 
 const CodeCard = ({type}) => {
     return (
         <>
             <div className="code-section">
-                <p>Contoh dari {type.title}</p>
+                <p>Contoh dari {type.title} :</p>
                 <p>Before: </p>
                 <CodeBlock text={type.codebefore}
                     theme={dracula}

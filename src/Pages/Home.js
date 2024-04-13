@@ -4,7 +4,7 @@ import CodeSmellCard from "../Components/CodeSmellCard.js";
 import Footer from "../Components/Footer.js";
 import "../Styles/Home.css";
 import cp from "../Content/change-preventers.js";
-import dispen from "../Content/dispensables.json";
+import dispen from "../Content/dispensables.js";
 
 const Home = () => {
     const route = "/home";

@@ -6,7 +6,8 @@ import "../Styles/Footer.css";
 const Footer = () => {
     const onClickOpen = (url) => {
         window.open(url, "_blank", "noreferrer");
-    }    
+    }
+     
     return (
         <div className="footer-section">
             <p>© 2024. All rights reserved.</p>

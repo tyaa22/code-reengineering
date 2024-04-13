@@ -4,8 +4,8 @@ const cp = {
     types : [
         {
             id: 0,
-            title: "Divergent Changes",
-            desc: "Divergent changes terjadi ketika kita harus membuat berbagai perubahan di kelas yang sama untuk alasan yang berbeda. Jadi, kita memiliki satu kelas yang ingin kita ubah atau tambahkan fiturnya, namun akibatnya kita harus mengubah metode - metode lain yang tidak bersangkutan. Dengan mengatasi smell ini, kode menjadi lebih terorganisir, mudah untuk dimodifikasi, dan kode duplikat berkurang.",
+            title: "Divergent Change",
+            desc: "Divergent Change terjadi ketika kita harus membuat berbagai perubahan di kelas yang sama untuk alasan yang berbeda. Jadi, kita memiliki satu kelas yang ingin kita ubah atau tambahkan fiturnya, namun akibatnya kita harus mengubah metode - metode lain yang tidak bersangkutan. Dengan mengatasi smell ini, kode menjadi lebih terorganisir, mudah untuk dimodifikasi, dan kode duplikat berkurang.",
             treatment: "Untuk mengatasi divergent change, dapat dilakukan Extract Class, Extract Superclass, dan Extract Subclass.",
             codebefore: `public class SavingsAccount {
         private string accountId;
