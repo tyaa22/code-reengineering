@@ -17,6 +17,7 @@
     font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: .8px;
+    text-align: center;
 }
 
 .card-txt {
@@ -61,13 +62,13 @@
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .card-icon {
-        left: 40%;
+        left: 45%;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     .card-icon {
         left: 43%;
     }

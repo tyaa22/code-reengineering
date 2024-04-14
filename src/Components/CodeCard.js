@@ -1,5 +1,4 @@
 import React from "react";
-import {CodeBlock, atomOneDark, dracula} from "react-code-blocks";
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 

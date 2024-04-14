@@ -26,16 +26,16 @@
 }
 
 .image-section {
-    width: 50%;
+    width: 80%;
     text-align: center;
 }
 
 .image-section > img {
-    width: 75%;
+    width: 80%;
     height: auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .intro-section {
         padding: 2rem;
     }

@@ -41,17 +41,16 @@
     .footer-section {
         font-size: .9rem;
     }
+    .separator {
+        display: none;
+    }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     .footer-section {
         padding: .5rem 1rem;
         font-size: .55rem;
         text-align: center;
-    }
-
-    .separator {
-        display: none;
     }
 
     .footer-fa-icon {

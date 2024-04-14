@@ -18,6 +18,8 @@
     display: flex; 
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     gap: 32px;
     margin: 0 24px;
 }
@@ -87,7 +89,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     .nav-bar-title {
         font-size: 1.7rem;
     }
