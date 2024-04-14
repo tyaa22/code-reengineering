@@ -14,7 +14,7 @@
 .card-title {
     margin: 35px 0 40px 0;
     color: black;
-    font-size: 28px;
+    font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: .8px;
 }
@@ -22,7 +22,6 @@
 .card-txt {
     margin: 0 6vw 24px 6vw;
     color: rgb(77, 75, 75);
-    font-size: 18px;
     letter-spacing: .8px;
     line-height: 1.5rem;
     text-align: justify;
@@ -65,5 +64,11 @@
 @media screen and (max-width: 700px) {
     .card-icon {
         left: 40%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-icon {
+        left: 43%;
     }
 }

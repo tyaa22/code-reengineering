@@ -6,12 +6,22 @@
     align-items: center;
     justify-content: space-between;
 }
+ 
+.name-section {
+    margin: 0 .5rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
 
-.footer-section > p {
-    font-size: small;
+.separator {
+    display: inline;
 }
 
 .footer-icons {
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,4 +35,26 @@
 
 .footer-fa-icon {
     font-size: medium;   
+}
+
+@media screen and (max-width: 900px) {
+    .footer-section {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-section {
+        padding: .5rem 1rem;
+        font-size: .55rem;
+        text-align: center;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    .footer-fa-icon {
+        font-size: small;
+    }
 }

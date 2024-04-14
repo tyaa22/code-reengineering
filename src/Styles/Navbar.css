@@ -39,7 +39,6 @@
 
 .mobile-nav {
     display: none;
-    z-index: 20;
 }
 
 .close-nav {
@@ -52,8 +51,8 @@
 }
 
 @media screen and (max-width: 900px) {
-    .mobile-nav {
-        display: inline;
+    .nav-bar {
+        padding: 0;
     }
 
     .mobile-items {
@@ -70,15 +69,49 @@
         background-color: white;
         z-index: 20;
         justify-content: baseline;
-        align-items: center;
-        transition: left .5s ease-in-out;
+        align-items: baseline;
     }
 
-    .nav-bar {
+    .mobile-nav {
+        display: inline;
         padding: 0;
+        width: fit-content;
+        height: fit-content;
+        top: 1%;
+        left: 93%;
+        background-color: transparent;
     }
 
     .nav-bar-items {
         display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-bar-title {
+        font-size: 1.7rem;
+    }
+
+    .mobile-items {
+        width: 35%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        background-color: white;
+        z-index: 20;
+    }
+
+    .mobile-nav {
+        padding: 0;
+        width: fit-content;
+        height: fit-content;
+        top: 1%;
+        left: 87%;
+        background-color: transparent;
+    }
+
+    .nav-link {
+        font-size: 1rem;
     }
 }

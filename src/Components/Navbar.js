@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
-    const [mobileNav, setMobileNav] = useState(false);
+    const [openMobileNav, setOpenMobileNav] = useState(false);
 
-    const openMobileNav = () => {
-        setMobileNav(!mobileNav)
+    const handleMobileNav = () => {
+        setOpenMobileNav(!openMobileNav)
     }
 
     return (
@@ -18,36 +18,42 @@ const Navbar = () => {
 
             <ul className="nav-bar-items">
                 <li className="nav-button">
-                    <Link className="nav-link active" to="/home">Home</Link>
+                    <Link className="nav-link" to="/home">Home</Link>
                 </li>
-                <li className="nav-button">
-                    <Link className="nav-link" to="/dispensables">Dispensables</Link>
-                </li>
+
                 <li className="nav-button">
                     <Link className="nav-link" to="/change-preventers">Change Preventers</Link>
                 </li>
+
+                <li className="nav-button">
+                    <Link className="nav-link" to="/dispensables">Dispensables</Link>
+                </li>
+
                 <li className="nav-button">
                     <a href="https://github.com/tyaa22/code-reengineering" target="_blank" rel="noopener noreferrer" className="nav-link">Github Page</a>
                 </li>
             </ul>
 
-            <ul className={mobileNav? "close-nav" : "mobile-items"}>
+            <ul className={openMobileNav? "mobile-items" : "close-nav"}>
                 <li className="nav-button">
-                    <Link className="nav-link active" to="/home">Home</Link>
+                    <Link className="nav-link" to="/home">Home</Link>
                 </li>
-                <li className="nav-button">
-                    <Link className="nav-link" to="/dispensables">Dispensables</Link>
-                </li>
+
                 <li className="nav-button">
                     <Link className="nav-link" to="/change-preventers">Change Preventers</Link>
                 </li>
+
+                <li className="nav-button">
+                    <Link className="nav-link" to="/dispensables">Dispensables</Link>
+                </li>
+
                 <li className="nav-button">
                     <a href="https://github.com/tyaa22/code-reengineering" target="_blank" rel="noopener noreferrer" className="nav-link">Github Page</a>
                 </li>
             </ul>
 
-            <div className="mobile-nav">
-                <FontAwesomeIcon className="mobile-nav-icon" icon={mobileNav ? faBars : faTimes} onClick={openMobileNav}/>
+            <div className={`mobile-nav ${openMobileNav? "mobile-items" : ""}`}>
+                <FontAwesomeIcon className="mobile-nav-icon" icon={openMobileNav ? faTimes : faBars} onClick={handleMobileNav}/>
             </div>
         </nav>
 

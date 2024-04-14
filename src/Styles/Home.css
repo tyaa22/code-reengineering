@@ -1,7 +1,19 @@
+.mainlayout-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
 .code-smell-cards {
     margin: 64px 25px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+}
+
+@media screen and (max-width: 480px) {
+    .code-smell-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 

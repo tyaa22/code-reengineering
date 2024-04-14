@@ -3,27 +3,35 @@
     flex-direction: column;
     gap: 24px;
     text-align: justify;
-    padding: 40px 60px;
+    padding: 40px 60px 10px 60px;
     line-height: 1.5rem;
     letter-spacing: .8px;
 }
 
 .smell-explanation {
+    display: flex;
+    flex-direction: column;
     height: auto;
     border-radius: 12px;
     background-color: #ECF2FF;
     box-shadow: 5px 5px 5px #DDDDDD;
-    padding: 32px;
+    padding: 30px;
+    gap: .5rem;;
 }
 
-.smell-name, .smell-type-list > h3 {
+.smell-name, .smell-type-list > h3, .smell-desc {
     margin: 0;
 }
 
 .smell-types {
     display: flex;
+    height: auto;
     flex-direction: column;
     gap: 32px;
+}
+
+.codeblocks {
+    background-color: orange;
 }
 
 .smell-type-list {
@@ -38,4 +46,19 @@
 
 .smell-type-list:first-child {
     border-top: none;
+}
+
+@media screen and (max-width: 480px) {
+    .smell-name {
+        font-size: 1.5rem;
+    }
+
+    .smell-desc, .smell-type-list {
+        font-size: .8rem;
+    }
+
+    .code-section > .code-block{
+        max-height: 50vh;
+    }
+    
 }

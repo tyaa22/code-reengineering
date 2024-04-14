@@ -1,6 +1,5 @@
 import React from "react";
 import "../Styles/SmellDescCard.css";
-import {useNavigate} from "react-router-dom";
 import CodeCard from "./CodeCard";
 
 const SmellDescCard = ({smell}) => {
@@ -11,7 +10,7 @@ const SmellDescCard = ({smell}) => {
                 <h3>{type.title}</h3>
                 <p>{type.desc}</p>
                 <p>{type.treatment}</p>
-                <CodeCard className="codeblocks" type={type}/>
+                <CodeCard type={type} />
             </div>
         ))
     }

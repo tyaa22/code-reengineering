@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/Introduction.css";
+import "../Styles/Hero.css";
 import Programming from "../Assets/programming.svg";
 
 const Hero = () => {

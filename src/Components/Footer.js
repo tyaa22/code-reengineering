@@ -9,9 +9,13 @@ const Footer = () => {
     }
      
     return (
-        <div className="footer-section">
+    <footer className="footer-section">
             <p>© 2024. All rights reserved.</p>
-            <p>Cyintia Aprilia Limmanto - 2602192134 | Geocean Djohan - 2602203705</p>
+            <div className="name-section">
+                <p>Cyintia Aprilia Limmanto - 2602192134</p>
+                <div className="separator">|</div>
+                <p>Geocean Djohan - 2602203705</p>
+            </div>
 
         <ul className="footer-icons">
             <li onClick={() => onClickOpen("https://www.facebook.com")}>
@@ -26,7 +30,7 @@ const Footer = () => {
                 <FontAwesomeIcon className="footer-fa-icon" icon={faTiktok}/>
             </li>
         </ul>
-    </div>
+    </footer>
     )
 }
 

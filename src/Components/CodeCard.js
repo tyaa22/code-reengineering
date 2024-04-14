@@ -1,5 +1,7 @@
 import React from "react";
-import {CodeBlock, dracula} from "react-code-blocks";
+import {CodeBlock, atomOneDark, dracula} from "react-code-blocks";
+import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
+import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const CodeCard = ({type}) => {
     return (
@@ -7,16 +9,14 @@ const CodeCard = ({type}) => {
             <div className="code-section">
                 <p>Contoh dari {type.title} :</p>
                 <p>Before: </p>
-                <CodeBlock text={type.codebefore}
-                    theme={dracula}
-                    showLineNumbers= {true}
-                />
+                <SyntaxHighlighter className="code-block" language="java" style={oneDark} showLineNumbers={true}>
+                    {type.codebefore}
+                </SyntaxHighlighter>
 
                 <p>After: </p>
-                <CodeBlock text={type.codeafter}
-                    theme={dracula}
-                    showLineNumbers= {true}
-                />
+                <SyntaxHighlighter className="code-block" language="java" style={oneDark} showLineNumbers={true}>
+                    {type.codeafter}
+                </SyntaxHighlighter>
             </div>
         </>
     );
