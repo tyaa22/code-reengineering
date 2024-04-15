@@ -1,6 +1,6 @@
 import './Styles/App.css';
 import Home from './Pages/Home';
-import {HashRouter, Navigate, Route, Routes} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 import ChangePreventers from './Pages/ChangePreventers';
 import Dispensables from './Pages/Dispensables';
 import MainLayout from './Components/MainLayout';
@@ -8,7 +8,6 @@ import MainLayout from './Components/MainLayout';
 function App() {
   return (
     <div className="App">
-      <HashRouter>
       <Routes>
         <Route path='/' element={<MainLayout />}>
           <Route index element={<Navigate to="/home" />}></Route>
@@ -18,7 +17,6 @@ function App() {
           <Route path="*" element={<Navigate to="/home" />} replace={true}></Route>
         </Route>
       </Routes>
-      </HashRouter>
     </div>
   );
 }
