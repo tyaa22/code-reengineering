@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/code-reengineering/static/css/main.c6e23038.css",
-    "main.js": "/code-reengineering/static/js/main.5fbee660.js",
+    "main.js": "/code-reengineering/static/js/main.2792f204.js",
     "static/js/453.1fd00e00.chunk.js": "/code-reengineering/static/js/453.1fd00e00.chunk.js",
     "static/media/programming.svg": "/code-reengineering/static/media/programming.e0c823cb7aeedb144a6842f83ceaac89.svg",
     "index.html": "/code-reengineering/index.html",
     "main.c6e23038.css.map": "/code-reengineering/static/css/main.c6e23038.css.map",
-    "main.5fbee660.js.map": "/code-reengineering/static/js/main.5fbee660.js.map",
+    "main.2792f204.js.map": "/code-reengineering/static/js/main.2792f204.js.map",
     "453.1fd00e00.chunk.js.map": "/code-reengineering/static/js/453.1fd00e00.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6e23038.css",
-    "static/js/main.5fbee660.js"
+    "static/js/main.2792f204.js"
   ]
 }
